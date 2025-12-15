@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Suscripción</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto y Suscripción</h1>
+        <p>Mantente informado sobre las últimas novedades en HTML y desarrollo web.</p>
+    </header>
+
+    <section>
+        <h2>Menú de Navegación</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="lineatiempo.html">Línea de Tiempo HTML</a></li>
+                <li><a href="comparativa.html">Tabla Comparativa</a></li>
+                <li><a href="ventajas.html">Ventajas de HTML5</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <main>
+        <section>
+            <h2>Ponte en Contacto con Nosotros</h2>
+            <article>
+                <h3>Comunicate con nuestro Equipo</h3>
+                <p>
+                    Esta sección te permite enviar consultas, sugerencias o comentarios sobre el contenido 
+                    presentado en este sitio web educativo. También puedes suscribirte a nuestro boletín 
+                    para recibir actualizaciones sobre nuevas especificaciones HTML, tutoriales y mejores 
+                    prácticas en desarrollo web.
+                </p>
+                <p>
+                    Valoramos tu opinión y estamos comprometidos con proporcionar información técnica precisa 
+                    y actualizada sobre la evolución del lenguaje HTML.
+                </p>
+            </article>
+        </section>
+
+        <div>
+            <img src="https://previews.123rf.com/images/magurok/magurok1610/magurok161000085/66078771-learn-html-and-css-learn-javascript-and-php-flat-illustration-concepts-templates-set-flat-design.jpg" 
+                alt="Imagen representativa de html5, JavaScript, CSS." width="500" height="225">
+        </div>
+
+        <section>
+            <h2>Formulario de Contacto</h2>
+            
+            <article>
+                <h3>Envíanos tus Consultas</h3>
+                <p>
+                    Completa el siguiente formulario con tus datos y mensaje. Todos los campos marcados 
+                    con asterisco (*) son obligatorios. Utilizamos validación HTML5 nativa para garantizar 
+                    que la información proporcionada sea correcta.
+                </p>
+            </article>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    
+                    <label for="nombre">Nombre Completo: *</label><br>
+                    <input type="text" id="nombre" name="nombre" 
+                           required minlength="3" maxlength="50" placeholder="Juan Pérez"
+                           title="Ingresa tu nombre completo (mínimo 3 caracteres)">
+                    <br><br>
+
+                    <label for="email">Correo Electrónico: *</label><br>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           required 
+                           placeholder="ejemplo@correo.com"
+                           title="Ingresa un correo electrónico válido">
+                    <br><br>
+
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" 
+                           id="telefono" 
+                           name="telefono" 
+                           pattern="[0-9]{10}"
+                           placeholder="0999999999"
+                           title="Ingresa 10 dígitos numéricos">
+                    <br><br>
+
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" 
+                           id="edad" 
+                           name="edad" 
+                           min="13" 
+                           max="120"
+                           placeholder="25"
+                           title="Debes tener al menos 13 años">
+                    <br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Área de Interés</legend>
+                    
+                    <label for="interes">Tema de Consulta: *</label><br>
+                    <select id="interes" name="interes" required title="Selecciona un tema">
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="html-basico">HTML Básico</option>
+                        <option value="html5">HTML5 y características modernas</option>
+                        <option value="semantica">Semántica web</option>
+                        <option value="accesibilidad">Accesibilidad web</option>
+                        <option value="apis">APIs de HTML5</option>
+                        <option value="migracion">Migración de código legacy</option>
+                        <option value="otro">Otro tema</option>
+                    </select>
+                    <br><br>
+
+                    <label>Nivel de Experiencia: *</label><br>
+                    <input type="radio" id="principiante" name="experiencia" value="principiante" required>
+                    <label for="principiante">Principiante</label><br>
+                    <input type="radio" id="intermedio" name="experiencia" value="intermedio">
+                    <label for="intermedio">Intermedio</label><br>
+                    <input type="radio" id="avanzado" name="experiencia" value="avanzado">
+                    <label for="avanzado">Avanzado</label><br>
+                    <input type="radio" id="profesional" name="experiencia" value="profesional">
+                    <label for="profesional">Profesional</label>
+                    <br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Tu Mensaje</legend>
+                    
+                    <label for="mensaje">Consulta o Comentario: *</label><br>
+                    <textarea id="mensaje" 
+                              name="mensaje" 
+                              rows="6" 
+                              cols="50" 
+                              required 
+                              minlength="10"
+                              maxlength="500"
+                              placeholder="Escribe tu consulta aquí (mínimo 10 caracteres, máximo 500)"
+                              title="Escribe tu mensaje con al menos 10 caracteres"></textarea>
+                    <br>
+                </fieldset>
+
+                <br>
+
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Limpiar Formulario">
+            </form>
+        </section>
+
+        <section>
+            <h2>Preguntas Frecuentes</h2>
+            
+            <article>
+                <h3>Lista de Consultas Comunes:</h3>
+                <ol>
+                    <li>
+                        <strong>¿Necesito conocimientos previos para entender el contenido?</strong><br>
+                        No es necesario, el sitio está diseñado para todos los niveles, desde principiantes 
+                        hasta profesionales.
+                    </li>
+                    <li>
+                        <strong>¿Con qué frecuencia se actualiza el contenido?</strong><br>
+                        Actualizamos el contenido trimestralmente para reflejar las últimas especificaciones 
+                        y mejores prácticas.
+                    </li>
+                    <li>
+                        <strong>¿Puedo usar este material con fines educativos?</strong><br>
+                        Sí, el contenido es de uso educativo libre. Solo citamos apropiadamente la fuente.
+                    </li>
+                    <li>
+                        <strong>¿Ofrecen certificaciones o cursos?</strong><br>
+                        Actualmente solo ofrecemos contenido informativo. Las certificaciones están en desarrollo.
+                    </li>
+                    <li>
+                        <strong>¿Cómo me desuscribo del boletín?</strong><br>
+                        Cada correo incluye un enlace de desuscripción al final del mensaje.
+                    </li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="referencias">
+            <h2>Referencias</h2>
+            
+            <p class="referencia">
+                Torres Guarnizo, D. A. (2020). <em>Diagramación y diseño digital</em>. Edilojla Cía. Ltda. Loja, Ecuador. 
+                <a href="http://www.ediloja.com.ec" target="_blank">www.ediloja.com.ec</a>
+            </p>
+            
+            <p class="referencia">
+                Curso básico HTML5. (n.d.). 
+                <a href="https://uneweb.edu.ve/tuto-docs/Curso-HTML5.pdf" target="_blank">https://uneweb.edu.ve/tuto-docs/Curso-HTML5.pdf</a>
+            </p>
+            
+            <p class="referencia">
+                Montecillo, A. (2023). Guía básica HTML 5 | Inicio. <em>Guiahtml.com</em>. 
+                <a href="https://guiahtml.com/index.html" target="_blank">https://guiahtml.com/index.html</a>
+            </p>
+            
+            <p class="referencia">
+                Manz. (2025). Lenguaje HTML - HTML en español. <em>Lenguajehtml.com</em>. 
+                <a href="https://lenguajehtml.com/html/" target="_blank">https://lenguajehtml.com/html/</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <address>
+            <p><strong>© 2025 Evolución del HTML</strong></p>
+            <p>Proyecto universitario de Tecnología Web</p>
+            <p>Correo: <a href="mailto:osrivadeneira@utpl.edu.ec">osrivadeneira@utpl.edu.ec</a></p>
+        </address>
+        <p>
+            <a href="#top"> ↑ Volver al inicio.</a> 
+        </p>
+    </footer>
+</body>
+</html>
